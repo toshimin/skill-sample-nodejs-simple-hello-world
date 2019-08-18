@@ -1,7 +1,7 @@
 const Alexa = require('ask-sdk');
 const skillName = 'シンプルハローワールド';
 
-const ENGLISH_PACK_ID = "amzn1.adg.product.c0cdac0a-7bcc-48fb-8baa-85a63440076a";
+const ENGLISH_PACK_ID = "amzn1.adg.product.XXXXXXXXXXXXXXXX"; // 英語パックのProductIdをコピペしてください。
 const HELP_MESSAGE = "「こんにちは」と話しかけてください。英語の「こんにちは」を聞きたい時は、「英語で言って！」と言ってください。どうしますか？";
 
 const LaunchRequestHandler = {
