@@ -34,7 +34,7 @@ const SayHelloHandler = {
 			console.log("PRODUCT=" + JSON.stringify(product));
 			let speechText = "";
 			const repromptText = "もっと聞きたいですか？";
-			if (product.entitled == "NOT_ENTITLED") {
+			if (product.entitled === "NOT_ENTITLED") {
 				// 英語パックを未購入 => 日本語で言う
 				speechText = '<say-as interpret-as="interjection">こんにちは</say-as>';
 			}
