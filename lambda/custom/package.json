@@ -9,6 +9,7 @@
   "author": "Amazon Alexa",
   "license": "ISC",
   "dependencies": {
-    "ask-sdk": "^2.3.0"
+    "ask-sdk": "^2.3.0",
+    "aws-sdk": "^2.326.0"
   }
 }
