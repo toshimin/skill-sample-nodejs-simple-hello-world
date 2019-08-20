@@ -36,8 +36,10 @@
 
 ワークショップでは、４つの課題に取り組みます。
 
-- [課題1「シンプルハローワールド」のセットアップ](1-setup-sample-skill.md)
-- [課題2 スキルの動作確認とログの確認](2-test.md)
-- [課題3 **WhatCanIBuyIntentHandler**の実装](3-adding-WhatCanIBuyIntent-handler.md)
-- [課題4 サブスクリプション商品の追加](4-adding-subscription-product.md)
+:point_right: [課題1「シンプルハローワールド」のセットアップ](./instructions/1-setup-sample-skill.md)
+:point_right: [課題2 スキルの動作確認とログの確認](./instructions/2-test.md)
+:point_right: [課題3 **WhatCanIBuyIntentHandler**の実装](./instructions/3-adding-WhatCanIBuyIntent-handler.md)
+:point_right: [課題4 サブスクリプション商品の追加](./instructions/4-adding-subscription-product.md)
+:point_right: [課題5 課題５ スキルの認定と公開](./instructions/5-submit-for-certification.md)
+
 
