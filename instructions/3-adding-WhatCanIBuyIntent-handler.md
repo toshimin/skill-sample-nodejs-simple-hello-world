@@ -1,4 +1,4 @@
-**[Alexaスキル内課金ワークショップ](./Readme.md)**
+**[Alexaスキル内課金ワークショップ](../README.md)**
 
 # 課題3 **WhatCanIBuyIntentHandler**の実装
 <img src="https://m.media-amazon.com/images/G/01/mobile-apps/dex/alexa/alexa-skills-kit/tutorials/quiz-game/header._TTH_.png" />

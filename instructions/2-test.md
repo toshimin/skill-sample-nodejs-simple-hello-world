@@ -1,4 +1,4 @@
-**[Alexaスキル内課金ワークショップ](./Readme.md)**
+**[Alexaスキル内課金ワークショップ](../README.md)**
 
 # 課題２ スキルの動作確認とログの確認
 <img src="https://m.media-amazon.com/images/G/01/mobile-apps/dex/alexa/alexa-skills-kit/tutorials/quiz-game/header._TTH_.png" />
