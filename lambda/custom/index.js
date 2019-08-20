@@ -70,34 +70,10 @@ const NoIntentHandler = {
 // 「何が買える？」と聞かれた時の応答
 const WhatCanIBuyIntentHandler = {
 	canHandle(handlerInput) {
-		return (handlerInput.requestEnvelope.request.type === 'IntentRequest' &&
-			handlerInput.requestEnvelope.request.intent.name === 'WhatCanIBuyIntent');
+		// 課題３: ここを実装してください。
 	},
-	async handle(handlerInput) {
-		// スキル内課金で購入できる商品情報を入手する
-		const locale = handlerInput.requestEnvelope.request.locale;
-		const ms = handlerInput.serviceClientFactory.getMonetizationServiceClient();
-		return await ms.getInSkillProduct(locale, ENGLISH_PACK_ID).then(function (product) {
-			// product にはproductIDで指定したISP商品の情報が含まれる
-			// ここでは、購入可能(PURCHASABLE)かつ未購入(NOT_ENTITLED)の商品がどうかをチェックする。
-			let speechText = '';
-			let repromptText = '';
-			if (product.entitled === 'NOT_ENTITLED' && product.purchasable === 'PURCHASABLE') {
-				// 購入可能な商品がある場合
-				repromptText = `詳しく知りたい場合は「${product.name}について教えて」と言ってください。このまま続ける場合は「こんにちは」と言ってください。どうしますか？`;
-				speechText = `現在、購入できる商品は、${product.name} です。${repromptText}`;
-			}
-			else {
-				// すでに購入済か、購入できる商品がない場合
-				speechText = '現在、購入できる商品はありません。続けますか？';
-				repromptText = '続けますか？';
-			}
-
-			return handlerInput.responseBuilder
-				.speak(speechText)
-				.reprompt(repromptText)
-				.getResponse();
-		});
+	handle(handlerInput) {
+		// 課題３: ここを実装してください。
 	}
 };
 
