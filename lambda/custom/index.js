@@ -70,10 +70,10 @@ const NoIntentHandler = {
 // 「何が買える？」と聞かれた時の応答
 const WhatCanIBuyIntentHandler = {
 	canHandle(handlerInput) {
-		// 課題2: ここを実装してください。
+		// 課題３: ここを実装してください。
 	},
 	handle(handlerInput) {
-		// 課題2: ここを実装してください。
+		// 課題３: ここを実装してください。
 	}
 };
 
