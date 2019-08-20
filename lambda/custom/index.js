@@ -135,10 +135,9 @@ const SayEnglishHelloIntentHandler = {
 			console.log("PRODUCT=" + JSON.stringify(product));
 
 			if (product.entitled === "ENTITLED") {
-				// 購入済。新たに購入する必要はない。
-				const repromptText = '続けますか？';
-				const speechText = `${product.name}は既にお持ちです。${repromptText}`;
-
+				// 購入済。新たに購入する必要はないので、そのまま英語で言う。
+				speechText = `<voice name="Joanna"><lang xml:lang="en-US">Hello!</lang></voice>
+							<break time="1s"/>${repromptText}`;
 				return handlerInput.responseBuilder
 					.speak(speechText)
 					.reprompt(repromptText)
