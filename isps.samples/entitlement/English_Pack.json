@@ -8,8 +8,8 @@
         "name": "英語パック",
         "summary": "英語パックでは、英語で「こんにちは」と言ってくれます。",
         "description": "英語パックでは、英語で「こんにちは」と言ってくれます。",
-        "smallIconUri": "https://s3.amazonaws.com/ask-samples-resources/icons/moneyicon_108.png",
-        "largeIconUri": "https://s3.amazonaws.com/ask-samples-resources/icons/moneyicon_512.png",
+        "smallIconUri": "",
+        "largeIconUri": "",
         "examplePhrases": [
           "英語で言って, 英語パックを購入, 英語パックをキャンセル"
         ],
