@@ -1,2 +1,43 @@
-# skill-sample-nodejs-simple-premium-hello-world
-Simplified official premium-hello-world sample code for node.js
+# Alexaスキル内課金ワークショップ 
+
+**skill-sample-nodejs-simple-premium-hello-world**
+
+このスキル（スキル名；シンプルハローワールド）は、Alexaスキル内課金ワークショップ用に開発されたサンプルスキルです。GitHub.comのAlexa公式ページにある、「プレミアムハローワールド」[skill-sample-nodejs-premium-hello-world](https://github.com/alexa/skill-sample-nodejs-premium-hello-world) をベースに、初心者にもコードを理解しやすいように作り変えています。
+
+## ワークショップの目的
+
+このスキルを通して、Alexaのスキル内課金の仕組みと実装方法の基本を学ぶことができます。
+
+## ワークショップの学習目標
+
+1. スキル内課金商品を定義し、スキルから購入できるよう登録することができるようになる。
+1. ASK SDK for Node.js を使って、スキル内課金の実装に必要なインターフェースを実装できるようになる。
+1. スキル内課金を実装したスキルをデプロイしテストできるようになる。
+1. シンプルハローワールドスキルを応用し、自分でカスタマイズできるようになる。
+
+## シンプルハローワールドスキルの概要
+
+スキルの呼び出し名: **シンプルハローワールド**
+
+このスキルに、「こんにちは」と話しかけると、日本語で「こんにちは」とAlexaが応答してくれます。
+**買い切り型**のスキル内商品「英語パック」を購入すると、Amazon Pollyの音声を使った自然な英語の発音で「Hello!」と言ってくれます。
+
+「英語パック」は、ユーザーがAlexaに「英語で言って」と依頼した場合(Upsell)と、「英語パックを購入」と言った場合(Buy)、Alexaの課金サービスの購入フローに進みユーザーに適した価格で購入することができます。
+
+間違って購入してしまった場合には「英語パックをキャンセル」と言うとキャンセルできます。
+
+### 利用しているAlexaの機能
+1. Alexa Skills Kit SDK for Node.js
+1. ISP API
+1. SSMLを使った、Amazon Pollyボイス
+1. 日本語用のSpeechcom
+
+# 課題
+
+ワークショップでは、４つの課題に取り組みます。
+
+- [課題1「シンプルハローワールド」のセットアップ](1-setup-sample-skill.md)
+- [課題2 スキルの動作確認とログの確認](2-test.md)
+- [課題3 **WhatCanIBuyIntentHandler**の実装](3-adding-WhatCanIBuyIntent-handler.md)
+- [課題4 サブスクリプション商品の追加](4-adding-subscription-product.md)
+
