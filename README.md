@@ -34,7 +34,7 @@
 
 # 課題
 
-ワークショップでは、４つの課題に取り組みます。
+ワークショップでは、５つの課題に取り組みます。
 
 :point_right: [課題1「シンプルハローワールド」のセットアップ](./instructions/1-setup-sample-skill.md)
 
@@ -44,6 +44,6 @@
 
 :point_right: [課題4 サブスクリプション商品の追加](./instructions/4-adding-subscription-product.md)
 
-:point_right: [課題5 課題５ スキルの認定と公開](./instructions/5-submit-for-certification.md)
+:point_right: [課題5 スキルの認定と公開](./instructions/5-submit-for-certification.md)
 
 
