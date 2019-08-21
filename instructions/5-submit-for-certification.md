@@ -31,7 +31,7 @@
 
        | サンプルフレーズを入力する際に考慮すべき事項 |
        | ----------------------------------------- |
-       | サンプルフレーズは [ユーザーによるカスタムスキルの呼び出し](https://developer.amazon.com/public/solutions/alexa/alexa-skills-kit/docs/supported-phrases-to-begin-a-conversation) に書かれているルールに沿っていること。 |
+       | サンプルフレーズは [ユーザーによるカスタムスキルの呼び出し](https://developer.amazon.com/ja/docs/custom-skills/understanding-how-users-invoke-custom-skills.html) に書かれているルールに沿っていること。 |
        | サンプルフレーズは対話モデルで定義した **サンプル発話** に基づいたものであること。 |
        | 1番目のサンプルフレーズは **ウェイクワードと呼び出し名** を含んでいること。 |
        | サンプルフレーズは **適切な応答を返す** ものであること。 |
@@ -123,11 +123,12 @@
       これはプレミアムハローワールドスキルのサンプルをもとに作成しました。
       ```
       これによりテストチームがスキルの構造を理解しテスト時間を節約することができます。
-      > 注意: 認証の詳細は [こちら](https://alexa.design/certification) をご参照ください。
+      > 注意: 認定の詳細は [スキルを公開する](https://alexa.design/certification) をご参照ください。
 
     * **ベータテスト**
 
-      詳しくは [こちら](https://alexa.design/skillbetatesting) をご参照ください。
+      詳しくは [Alexaスキルのベータテストを行う
+](https://developer.amazon.com/ja/docs/custom-skills/skills-beta-testing-for-alexa-skills.html) をご参照ください。
 
       > 注意: ベータテストでは、ベータテスターはスキル内課金で決済しても、実際の支払いは発生しません。
 

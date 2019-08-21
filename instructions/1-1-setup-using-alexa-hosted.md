@@ -98,8 +98,8 @@ Alexa-Hostedスキルが提供するサービスの詳細については、新�
     **表示名**|この商品の表示名。 | 英語パック|
     **説明**| 商品の簡単な説明。 ユーザーはこの説明を音声で聞くことになります。| 英語パックでは、英語で「こんにちは」と言ってくれます。|
     **詳細な説明**| 商品の機能や使用要件など詳細な説明。画面付きデバイスの購入カードなどに表示されます。| 英語パックでは、英語で「こんにちは」と言ってくれます。|
-    **小さいアイコン**| スキルストアや Alexa アプリで商品表示に利用する小さいアイコン。| https://skillsassets.s3-ap-northeast-1.amazonaws.com/icons/EnglishPack_108.png|
-    **大きいアイコン**| スキルストアや Alexa アプリで商品表示に利用する大きいアイコン。| https://skillsassets.s3-ap-northeast-1.amazonaws.com/icons/EngishPack_512.png|
+    **小さいアイコン**| スキルストアや Alexa アプリで商品表示に利用する小さいアイコン。| https://skillsassets.s3-ap-northeast-1.amazonaws.com/icons/EnglishPack_108.png |
+    **大きいアイコン**| スキルストアや Alexa アプリで商品表示に利用する大きいアイコン。| https://skillsassets.s3-ap-northeast-1.amazonaws.com/icons/EngishPack_512.png |
     **購入プロンプトの説明**| ユーザーが購入を実行したときに聞く商品の説明です。| 英語パックを購入すると、英語で「こんにちは」と言ってくれます。|
     **購入確認の説明**| Alexaコンパニオンアプリの購入後確認カードに表示されます。| 挨拶パックを購入しました。フランス語、スペイン語、ヒンズー語など、様々な言語の挨拶を聞くことができます。|
     > アイコンは好みのものに置換えても大丈夫です。ISPやスキルのアイコン作成にお困りなら、[Alexa Skill Icon Builder](https://developer.amazon.com/docs/tools/icon-builder.html) を利用することも可能です。

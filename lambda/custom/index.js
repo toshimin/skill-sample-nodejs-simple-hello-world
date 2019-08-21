@@ -134,6 +134,8 @@ const SayEnglishHelloIntentHandler = {
 
 			console.log("PRODUCT=" + JSON.stringify(product));
 
+			let speechText = '';
+			const repromptText = 'もっと聞きたいですか？';
 			if (product.entitled === "ENTITLED") {
 				// 購入済。新たに購入する必要はないので、そのまま英語で言う。
 				speechText = `<voice name="Joanna"><lang xml:lang="en-US">Hello!</lang></voice>
@@ -143,22 +145,24 @@ const SayEnglishHelloIntentHandler = {
 					.reprompt(repromptText)
 					.getResponse();
 			}
-			// 未購入の場合はアップセル
-			const speechText = `英語の「こんにちは」を聞くには、${product.name}が必要です。詳しく聞きたいですか？`;
-			console.log('**** Send Upsell Directive ****');
-			return handlerInput.responseBuilder
-				.addDirective({
-					type: 'Connections.SendRequest',
-					name: 'Upsell',
-					payload: {
-						InSkillProduct: {
-							productId: ENGLISH_PACK_ID
+			else {
+				// 未購入の場合はアップセル
+				speechText = `英語の「こんにちは」を聞くには、${product.name}が必要です。詳しく聞きたいですか？`;
+				console.log('**** Send Upsell Directive ****');
+				return handlerInput.responseBuilder
+					.addDirective({
+						type: 'Connections.SendRequest',
+						name: 'Upsell',
+						payload: {
+							InSkillProduct: {
+								productId: ENGLISH_PACK_ID
+							},
+							upsellMessage: speechText
 						},
-						upsellMessage: speechText
-					},
-					token: 'correlationToken'
-				})
-				.getResponse();
+						token: 'correlationToken'
+					})
+					.getResponse();
+			}
 		});
 	}
 };

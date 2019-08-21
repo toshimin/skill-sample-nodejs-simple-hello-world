@@ -40,8 +40,8 @@
             **表示名**|この商品の表示名。 | サブスクリプション|
             **説明**| 商品の簡単な説明。 ユーザーはこの説明を音声で聞くことになります。| サブスクリプションを購入すると、英語で「こんにちは」と言ってくれます。|
             **詳細な説明**| 商品の機能や使用要件など詳細な説明。画面付きデバイスの購入カードなどに表示されます。| サブスクリプションを購入すると、英語で「こんにちは」と言ってくれます。|
-            **小さいアイコン**| スキルストアや Alexa アプリで商品表示に利用する小さいアイコン。| https://skillsassets.s3-ap-northeast-1.amazonaws.com/icons/Subscription_108.png|
-            **大きいアイコン**| スキルストアや Alexa アプリで商品表示に利用する大きいアイコン。| https://skillsassets.s3-ap-northeast-1.amazonaws.com/icons/Subscription_512.png|
+            **小さいアイコン**| スキルストアや Alexa アプリで商品表示に利用する小さいアイコン。| https://skillsassets.s3-ap-northeast-1.amazonaws.com/icons/Subscription_108.png |
+            **大きいアイコン**| スキルストアや Alexa アプリで商品表示に利用する大きいアイコン。| https://skillsassets.s3-ap-northeast-1.amazonaws.com/icons/Subscription_512.png |
             **購入プロンプトの説明**| ユーザーが購入を実行したときに聞く商品の説明です。| サブスクリプションを購入すると、英語で「こんにちは」を聞くことができます。|
             **購入確認の説明**| Alexaコンパニオンアプリの購入後確認カードに表示されます。| サブスクリプションを購入しました。日本語の「こんにちは」を英語で言ってくれます。|
 

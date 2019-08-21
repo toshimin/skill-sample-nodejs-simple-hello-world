@@ -24,11 +24,18 @@
 
 「英語パック」は、ユーザーがAlexaに「英語で言って」と依頼した場合(Upsell)と、「英語パックを購入」と言った場合(Buy)、Alexaの課金サービスの購入フローに進みユーザーに適した価格で購入することができます。
 
+### 受講の条件
+- JavaScriptまたはNode.jsのプログラミング経験があること。
+- Alexaのシンプルなカスタムスキルを作成した経験があること。
+- Amazonの開発者アカウントを登録していること。さらに、スキル内課金の機能をテストするには以下の条件が必須です。
+    - Alexaアプリの設定で**音声ショッピングが有効**になっていること。
+    - アカウントの登録住所が**日本国内の住所**になっていること。
+
 ### 利用しているAlexaの機能
-1. Alexa Skills Kit SDK for Node.js
-1. ISP API
-1. SSMLを使った、Amazon Pollyボイス
-1. 日本語用のSpeechcom
+- Alexa Skills Kit SDK for Node.js
+- スキル内課金API
+- SSMLを使った、Amazon Pollyボイス
+- 日本語スピーチコン
 
 # 課題
 
