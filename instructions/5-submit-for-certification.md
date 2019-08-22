@@ -123,7 +123,7 @@
       これはプレミアムハローワールドスキルのサンプルをもとに作成しました。
       ```
       これによりテストチームがスキルの構造を理解しテスト時間を節約することができます。
-      > 注意: 認定の詳細は [スキルを公開する](https://alexa.design/certification) をご参照ください。
+      > 注意: 認定の詳細は [Alexaスキルを公開する](https://developer.amazon.com/ja/alexa-skills-kit/launch) をご参照ください。
 
     * **ベータテスト**
 
