@@ -12,15 +12,9 @@ ASK CLIを利用できる環境があれば、**方法１**よりももっと素
 
 ### セットアップ手順
 
-1. プロジェクトを workshopbブランチに切り替えます。
+1. OSのターミナルアプリケーションを起動します。
 
-    ![1-40](./images/1-40-change-branch-to-workshop.png)
-
-    > masterブランチは、完成版のコードが含まれています。ワークショップで課題を行う場合は、workshopブランチに切り替えてご利用ください。
-
-1. OSのターミナルを起動します。
-
-1. プロジェクトファイルをZIPでダウンロードするか、gitコマンドでローカルにクローンするかを選択します。それぞれの手順は以下の通り。
+1. プロジェクトファイルをZIPでダウンロードするか、gitコマンドでクローンするかを選択します。それぞれの手順は以下の通り。
 
     -  **ZIPファイルをダウンロードする場合**
     
@@ -45,7 +39,7 @@ ASK CLIを利用できる環境があれば、**方法１**よりももっと素
         1. プロジェクトファイルをクローンします。
 
             ```bash
-            $ git clone git@github.com:toshimin/skill-sample-nodejs-simple-hello-world.git
+            $ git clone git@github.com:<xxxxxxxx>/skill-sample-nodejs-simple-hello-world.git
             ```
             出力結果
             ![1-40](./images/1-40-ask-clone.png)
