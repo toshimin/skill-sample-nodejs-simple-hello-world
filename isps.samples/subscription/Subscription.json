@@ -12,8 +12,8 @@
         "name": "サブスクリプション",
         "summary": "サブスクリプションでは、英語で「こんにちは」と言ってくれます。",
         "description": "サブスクリプションでは、英語で「こんにちは」と言ってくれます。",
-        "smallIconUri": "",
-        "largeIconUri": "",
+        "smallIconUri": "https://raw.githubusercontent.com/toshimin/skill-sample-nodejs-simple-hello-world/master/Subscription_108.png",
+        "largeIconUri": "https://raw.githubusercontent.com/toshimin/skill-sample-nodejs-simple-hello-world/master/Subscription_512.png",
         "examplePhrases": [
           "サブスクリプションを購入, サブスクリプションをキャンセル"
         ],

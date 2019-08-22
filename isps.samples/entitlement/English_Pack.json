@@ -8,8 +8,8 @@
         "name": "英語パック",
         "summary": "英語パックでは、英語で「こんにちは」と言ってくれます。",
         "description": "英語パックでは、英語で「こんにちは」と言ってくれます。",
-        "smallIconUri": "",
-        "largeIconUri": "",
+        "smallIconUri": "https://s3.amazonaws.com/CAPS-SSE/echo_developer/12ec/7c643a9a6217434cb106a26d8a982acd/APP_ICON?versionId=voatyBLVraSgeNbFLg2FK.ZA3AwfgNlN&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20190822T110252Z&X-Amz-SignedHeaders=host&X-Amz-Expires=86400&X-Amz-Credential=AKIAJFEYRBGIHK2BBYKA%2F20190822%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Signature=e4180acab475e1a518fdf9738abb95c80815bb40bed65a589119acc09aafde5b",
+        "largeIconUri": "https://s3.amazonaws.com/CAPS-SSE/echo_developer/43c5/bcd26a94ad8940c5b463b76447b6e685/APP_ICON_LARGE?versionId=YzwpFb9n88kQM7OhaXdkmZdCRytEFhdP&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20190822T110252Z&X-Amz-SignedHeaders=host&X-Amz-Expires=86400&X-Amz-Credential=AKIAJFEYRBGIHK2BBYKA%2F20190822%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Signature=75d34c173376004bb30821a42b95796710afdb681c769c30a94fe8f9e6cee033",
         "examplePhrases": [
           "英語で言って, 英語パックを購入, 英語パックをキャンセル"
         ],
