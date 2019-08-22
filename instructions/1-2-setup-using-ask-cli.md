@@ -51,11 +51,6 @@ ASK CLIを利用できる環境があれば、**方法１**よりももっと素
             ```bash
             $ cd skill-sample-nodejs-simple-hello-world
             ```
-        1. ブランチを workshop に切り替えます。
-
-            ```bash
-            $ git checkout workshop
-            ```
 
 1. askコマンドでスキルをデプロイします。
 
