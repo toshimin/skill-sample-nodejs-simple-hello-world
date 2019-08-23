@@ -51,8 +51,6 @@
         具体的な記述方法は、こちらの[ドキュメント](https://ask-sdk-for-nodejs.readthedocs.io/ja/latest/Calling-Alexa-Service-APIs.html#getinskillproduct)を参照してください。
     
         > 複数のスキル内商品が登録されている場合、それらの情報を一度に取得するためのメソッド [`getInSkillProducts()`](https://ask-sdk-for-nodejs.readthedocs.io/ja/latest/Calling-Alexa-Service-APIs.html#getinskillproducts)も用意されています。どちらを使用しても構いません。
-        
-        > `getInSkillProduct()` 及び `getInSkillProducts()`APIコールは非同期処理を行います。`handle()`の前に**async**を、APIをコールする部分に**await**キーワードをつけることを忘れずに。
 
     1. `getInSkillProduct()`APIは、以下のような商品レコードを取得します。
 

@@ -25,11 +25,11 @@ const SayHelloHandler = {
 			(handlerInput.requestEnvelope.request.intent.name === 'AMAZON.YesIntent' ||
 				handlerInput.requestEnvelope.request.intent.name === 'SayHelloIntent'));
 	},
-	async handle(handlerInput) {
+	handle(handlerInput) {
 		const locale = handlerInput.requestEnvelope.request.locale;
 		const ms = handlerInput.serviceClientFactory.getMonetizationServiceClient();
 
-		return await ms.getInSkillProducts(locale, null, 'ENTITLED').then(function (res) {
+		return ms.getInSkillProducts(locale, null, 'ENTITLED').then(function (res) {
 
 			let speechText = "";
 			const repromptText = "もっと聞きたいですか？";
@@ -76,11 +76,11 @@ const WhatCanIBuyIntentHandler = {
 		return (handlerInput.requestEnvelope.request.type === 'IntentRequest' &&
 			handlerInput.requestEnvelope.request.intent.name === 'WhatCanIBuyIntent');
 	},
-	async handle(handlerInput) {
+	handle(handlerInput) {
 		// スキル内課金で購入できる商品情報を入手する
 		const locale = handlerInput.requestEnvelope.request.locale;
 		const ms = handlerInput.serviceClientFactory.getMonetizationServiceClient();
-		return await ms.getInSkillProducts(locale, 'PURCHASABLE', 'NOT_ENTITLED').then(function (res) {
+		return ms.getInSkillProducts(locale, 'PURCHASABLE', 'NOT_ENTITLED').then(function (res) {
 
 			// res にはスキルで提供する全てのISP商品のリストが含まれる
 			// ここでは、JavaScriptのフィルターを使って、購入可能(PURCHASABLE)かつ未購入(NOT_ENTITLED)の商品のリストを抽出する
@@ -124,11 +124,11 @@ const BuyEnglishPackIntentHandler = {
 		return handlerInput.requestEnvelope.request.type === 'IntentRequest' &&
 			handlerInput.requestEnvelope.request.intent.name === 'BuyEnglishPackIntent';
 	},
-	async handle(handlerInput) {
+	handle(handlerInput) {
 		const locale = handlerInput.requestEnvelope.request.locale;
 		const ms = handlerInput.serviceClientFactory.getMonetizationServiceClient();
 
-		return await ms.getInSkillProducts(locale).then(function (res) {
+		return ms.getInSkillProducts(locale).then(function (res) {
 			// 商品情報を入手する
 			let products = res.inSkillProducts.filter(
 				record => record.entitled === 'ENTITLED'
@@ -176,11 +176,11 @@ const BuySubscriptionIntentHandler = {
 		return handlerInput.requestEnvelope.request.type === 'IntentRequest' &&
 			handlerInput.requestEnvelope.request.intent.name === 'BuySubscriptionIntent';
 	},
-	async handle(handlerInput) {
+	handle(handlerInput) {
 		const locale = handlerInput.requestEnvelope.request.locale;
 		const ms = handlerInput.serviceClientFactory.getMonetizationServiceClient();
 
-		return await ms.getInSkillProducts(locale).then(function (res) {
+		return ms.getInSkillProducts(locale).then(function (res) {
 			// 商品情報を入手する
 			const entitledProducts = res.inSkillProducts.filter(record => record.entitled == 'ENTITLED');
 
@@ -227,11 +227,11 @@ const SayEnglishHelloIntentHandler = {
 		return handlerInput.requestEnvelope.request.type === 'IntentRequest' &&
 			handlerInput.requestEnvelope.request.intent.name === 'SayEnglishHelloIntent';
 	},
-	async handle(handlerInput) {
+	handle(handlerInput) {
 		const locale = handlerInput.requestEnvelope.request.locale;
 		const ms = handlerInput.serviceClientFactory.getMonetizationServiceClient();
 
-		return await ms.getInSkillProducts(locale).then(function (res) {
+		return ms.getInSkillProducts(locale).then(function (res) {
 
 			let products = res.inSkillProducts.filter(
 				record => record.entitled === 'ENTITLED'
@@ -279,12 +279,12 @@ const BuyResponseHandler = {
 			(handlerInput.requestEnvelope.request.name === 'Buy' ||
 				handlerInput.requestEnvelope.request.name === 'Upsell');
 	},
-	async handle(handlerInput) {
+	handle(handlerInput) {
 		const locale = handlerInput.requestEnvelope.request.locale;
 		const ms = handlerInput.serviceClientFactory.getMonetizationServiceClient();
 		const productId = handlerInput.requestEnvelope.request.payload.productId;
 
-		return await ms.getInSkillProduct(locale, productId).then(function (product) {
+		return ms.getInSkillProduct(locale, productId).then(function (product) {
 
 			if (handlerInput.requestEnvelope.request.status.code === '200') {
 
@@ -337,12 +337,12 @@ const RefundEnglishPackIntentHandler = {
 			handlerInput.requestEnvelope.request.intent.name === 'RefundEnglishPackIntent'
 		);
 	},
-	async handle(handlerInput) {
+	handle(handlerInput) {
 		const locale = handlerInput.requestEnvelope.request.locale;
 		const monetizationClient = handlerInput.serviceClientFactory.getMonetizationServiceClient();
 
 		// 購入フロー(Cencel)を渡す。一旦セッションが終了する。
-		return await monetizationClient.getInSkillProducts(locale).then(function (res) {
+		return monetizationClient.getInSkillProducts(locale).then(function (res) {
 			const products = res.inSkillProducts.filter(
 				record => record.referenceName === 'English_Pack'
 			);
@@ -370,12 +370,12 @@ const CancelSubscriptionIntentHandler = {
 			handlerInput.requestEnvelope.request.intent.name === 'CancelSubscriptionIntent'
 		);
 	},
-	async handle(handlerInput) {
+	handle(handlerInput) {
 		const locale = handlerInput.requestEnvelope.request.locale;
 		const monetizationClient = handlerInput.serviceClientFactory.getMonetizationServiceClient();
 
 		// 購入フロー(Cencel)を渡す。一旦セッションが終了する。
-		return await monetizationClient.getInSkillProducts(locale).then(function (res) {
+		return monetizationClient.getInSkillProducts(locale).then(function (res) {
 			const products = res.inSkillProducts.filter(
 				record => record.referenceName === 'Subscription'
 			);
@@ -401,14 +401,14 @@ const CancelProductResponseHandler = {
 		return handlerInput.requestEnvelope.request.type === 'Connections.Response' &&
 			handlerInput.requestEnvelope.request.name === 'Cancel';
 	},
-	async handle(handlerInput) {
+	handle(handlerInput) {
 		const locale = handlerInput.requestEnvelope.request.locale;
 		const ms = handlerInput.serviceClientFactory.getMonetizationServiceClient();
 		const productId = handlerInput.requestEnvelope.request.payload.productId;
 		let speechText = '';
 		const repromptText = '続けますか？';
 
-		return await ms.getInSkillProduct(locale, productId).then(function (product) {
+		return ms.getInSkillProduct(locale, productId).then(function (product) {
 
 			console.log(`PRODUCTS = ${JSON.stringify(product)} `);
 
