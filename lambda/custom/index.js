@@ -26,11 +26,11 @@ const SayHelloHandler = {
 			(handlerInput.requestEnvelope.request.intent.name === 'AMAZON.YesIntent' ||
 				handlerInput.requestEnvelope.request.intent.name === 'SayHelloIntent'));
 	},
-	async handle(handlerInput) {
+	handle(handlerInput) {
 		const locale = handlerInput.requestEnvelope.request.locale;
 		const ms = handlerInput.serviceClientFactory.getMonetizationServiceClient();
 
-		return await ms.getInSkillProduct(locale, ENGLISH_PACK_ID).then(function (product) {
+		return ms.getInSkillProduct(locale, ENGLISH_PACK_ID).then(function (product) {
 			console.log("PRODUCT=" + JSON.stringify(product));
 			let speechText = "";
 			const repromptText = "もっと聞きたいですか？";
@@ -83,11 +83,11 @@ const BuyEnglishPackIntentHandler = {
 		return handlerInput.requestEnvelope.request.type === 'IntentRequest' &&
 			handlerInput.requestEnvelope.request.intent.name === 'BuyEnglishPackIntent';
 	},
-	async handle(handlerInput) {
+	handle(handlerInput) {
 		const locale = handlerInput.requestEnvelope.request.locale;
 		const ms = handlerInput.serviceClientFactory.getMonetizationServiceClient();
 
-		return await ms.getInSkillProduct(locale, ENGLISH_PACK_ID).then(function (product) {
+		return ms.getInSkillProduct(locale, ENGLISH_PACK_ID).then(function (product) {
 			// 商品情報を入手する
 
 			if (product.entitled === "ENTITLED") {
@@ -126,11 +126,11 @@ const SayEnglishHelloIntentHandler = {
 		return handlerInput.requestEnvelope.request.type === 'IntentRequest' &&
 			handlerInput.requestEnvelope.request.intent.name === 'SayEnglishHelloIntent';
 	},
-	async handle(handlerInput) {
+	handle(handlerInput) {
 		const locale = handlerInput.requestEnvelope.request.locale;
 		const ms = handlerInput.serviceClientFactory.getMonetizationServiceClient();
 
-		return await ms.getInSkillProduct(locale, ENGLISH_PACK_ID).then(function (product) {
+		return ms.getInSkillProduct(locale, ENGLISH_PACK_ID).then(function (product) {
 
 			console.log("PRODUCT=" + JSON.stringify(product));
 
@@ -175,11 +175,11 @@ const BuyResponseHandler = {
 			(handlerInput.requestEnvelope.request.name === 'Buy' ||
 				handlerInput.requestEnvelope.request.name === 'Upsell');
 	},
-	async handle(handlerInput) {
+	handle(handlerInput) {
 		const locale = handlerInput.requestEnvelope.request.locale;
 		const ms = handlerInput.serviceClientFactory.getMonetizationServiceClient();
 
-		return await ms.getInSkillProduct(locale, ENGLISH_PACK_ID).then(function (product) {
+		return ms.getInSkillProduct(locale, ENGLISH_PACK_ID).then(function (product) {
 
 			if (handlerInput.requestEnvelope.request.status.code === '200') {
 
@@ -256,11 +256,11 @@ const CancelProductResponseHandler = {
 		return handlerInput.requestEnvelope.request.type === 'Connections.Response' &&
 			handlerInput.requestEnvelope.request.name === 'Cancel';
 	},
-	async handle(handlerInput) {
+	handle(handlerInput) {
 		const locale = handlerInput.requestEnvelope.request.locale;
 		const ms = handlerInput.serviceClientFactory.getMonetizationServiceClient();
 
-		return await ms.getInSkillProduct(locale, ENGLISH_PACK_ID).then(function (product) {
+		return ms.getInSkillProduct(locale, ENGLISH_PACK_ID).then(function (product) {
 
 			console.log(`PRODUCT = ${JSON.stringify(product)} `);
 
