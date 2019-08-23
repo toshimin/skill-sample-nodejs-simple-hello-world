@@ -75,7 +75,7 @@
 
         **購入できる商品がない場合**の判別条件は以下のようになります。（既に購入済み または 商品が購入できない状態）
         ```
-        (entitle === ENTITLED && purchasable === NOT_PURCHASABLE)
+        (entitle === ENTITLED || purchasable === NOT_PURCHASABLE)
         ```
 
     1. 以上のヒントを元に、**WhatCanIBuyIntentHandler**を完成させてください。コードが完成したらAlexaシミュレーターで動作テストを行ってください。
