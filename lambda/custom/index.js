@@ -250,7 +250,7 @@ const RefundEnglishPackIntentHandler = {
 	}
 };
 
-// 購入フロー(Cancel)からスキルに戻ßってきた時の処理。セッションが復活する。
+// 購入フロー(Cancel)からスキルに戻ってきた時の処理。セッションが復活する。
 const CancelProductResponseHandler = {
 	canHandle(handlerInput) {
 		return handlerInput.requestEnvelope.request.type === 'Connections.Response' &&
