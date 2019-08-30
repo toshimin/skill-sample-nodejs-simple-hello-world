@@ -5,7 +5,7 @@
 
 この課題では、ASK SDKのスキル内課金APIを呼び出す**MonetizationServiceClient**を使って、Lambdaのコードにインテントハンドラーを一つ追加します。
 
-この課題をクリアすると、ASK SDK の**MonetizationServiceClient**を使ってスキル内課金APIを呼び出す方法と、そのレスポンスの取り扱い方法をマスターすることができます。
+この課題をクリアすると、ASK SDK の**MonetizationServiceClient**を使ってスキル内課金APIを呼び出す方法と、そのレスポンスの取り扱い方法をマスターすることができます。
 
 ## 課題の手順
 
