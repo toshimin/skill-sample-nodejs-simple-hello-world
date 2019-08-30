@@ -9,7 +9,7 @@
         "summary": "英語パックでは、英語で「こんにちは」と言ってくれます。",
         "description": "英語パックでは、英語で「こんにちは」と言ってくれます。",
         "smallIconUri": "https://raw.githubusercontent.com/toshimin/skill-sample-nodejs-simple-hello-world/master/EnglishPack_108.png",
-        "largeIconUri": "https://raw.githubusercontent.com/toshimin/skill-sample-nodejs-simple-hello-world/master/EnglishPack_108.png",
+        "largeIconUri": "https://raw.githubusercontent.com/toshimin/skill-sample-nodejs-simple-hello-world/master/EnglishPack_512.png",
         "examplePhrases": [
           "英語で言って, 英語パックを購入, 英語パックをキャンセル"
         ],
